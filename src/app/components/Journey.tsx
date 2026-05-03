@@ -1,19 +1,34 @@
 export default function Journey() {
   const milestones = [
     {
-      year: "2024",
-      title: "The Beginning",
-      description: "Born from a simple belief: comfort is not a luxury, but a necessity for modern living."
+      month: "Phase 1",
+      title: "Idea Formation",
+      description: "Identified the gap in Pakistan’s market for a comfort-first lifestyle brand focusing on students, freelancers, and home-based users."
     },
     {
-      year: "2025",
-      title: "Research & Development",
-      description: "Months of testing materials, designs, and comfort principles with real users in their homes."
+      month: "Phase 2",
+      title: "Concept Development",
+      description: "Developed Komfora as a comfort ecosystem including wearable hoodies, ergonomic cushions, and comfort kits for study, work, and relaxation."
     },
     {
-      year: "2026",
-      title: "Launching Soon",
-      description: "Ready to bring our vision of everyday comfort to homes around the world."
+      month: "Phase 3",
+      title: "Business Model Design",
+      description: "Created seasonal drop strategy, comfort bundles, mood-based collections, and a customer retention system instead of subscriptions."
+    },
+    {
+      month: "Phase 4",
+      title: "Brand Identity & Design",
+      description: "Designed Komfora branding, selected warm beige-brown color palette, and created UI/UX concepts for website and marketing materials."
+    },
+    {
+      month: "Phase 5",
+      title: "Validation & Financial Planning",
+      description: "Prepared startup cost, ROI, payback period, and per-unit cost estimates based on market research and supplier assumptions."
+    },
+    {
+      month: "Phase 6",
+      title: "Current Stage – Presentation Ready",
+      description: "Finalized Business Model Canvas, website structure, branding, flyer design, and ready for academic presentation and approval."
     }
   ];
 
@@ -37,7 +52,7 @@ export default function Journey() {
               <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:ml-auto md:pr-12' : 'md:pl-12'}`}>
                 <div className="p-8" style={{ backgroundColor: '#FFFFFF', borderRadius: '1rem', boxShadow: '0 1px 3px rgba(139, 111, 71, 0.1)' }}>
                   <div className="inline-block px-4 py-2 rounded-full mb-4" style={{ fontSize: '0.875rem', backgroundColor: '#8B6F47', color: '#FFFFFF' }}>
-                    {milestone.year}
+                    {milestone.month}
                   </div>
                   <h3 className="mb-3" style={{ fontSize: '1.375rem', fontWeight: '400', color: '#3D2E28' }}>
                     {milestone.title}

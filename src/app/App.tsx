@@ -19,7 +19,7 @@ export default function App() {
       <About />
       <ProductPreview />
       <Gallery />
-      <Reviews />
+      {/* <Reviews /> */}
       <Philosophy />
       <Journey />
       <Team />

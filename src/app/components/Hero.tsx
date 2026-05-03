@@ -13,14 +13,14 @@ export default function Hero() {
         <img
           src="https://images.unsplash.com/photo-1578910338777-0a8b54fec4b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
           alt="Person relaxing in comfort"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-105"
         />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/35 backdrop-blur-[1px]"></div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
       </div>
 
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
-        <h1 className="mb-6 tracking-tight" style={{ fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: '300', letterSpacing: '0.05em', color: '#FAF7F4' }}>
+        <h1 className="mb-6 tracking-tight" style={{ fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: '300', letterSpacing: '0.05em', color: '#FFF9F2' }}>
           Komfora
         </h1>
 
