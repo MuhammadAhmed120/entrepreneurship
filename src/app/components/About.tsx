@@ -27,23 +27,25 @@ export default function About() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section id="about" className="py-24" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16">
-          <p className="max-w-3xl mx-auto" style={{ fontSize: '1.125rem', lineHeight: '2', color: '#6B5E52' }}>
-            Komfora is a comfort-first lifestyle brand dedicated to creating products and experiences
-            that help you relax, focus, and recharge. We believe that true productivity comes from
-            moments of rest, and that everyday comfort is the foundation of well-being.
+          <h2 className="mb-8" style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', fontWeight: '300', color: '#8B6F47' }}>
+            About Komfora
+          </h2>
+          <p className="max-w-3xl mx-auto" style={{ fontSize: '1.125rem', lineHeight: '2', color: '#7A6A5C' }}>
+            Komfora is a comfort-first lifestyle brand designed to improve relaxation, focus, and everyday well-being.
+            We aim to create products that make studying, working, and relaxing more comfortable.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {values.map((value, index) => (
             <div key={index} className="flex flex-col items-center text-center">
-              <div className="mb-4 text-[#7F9E7C]">
+              <div className="mb-4" style={{ color: '#A68968' }}>
                 {value.icon}
               </div>
-              <p style={{ fontSize: '1.125rem', fontWeight: '400', color: '#6B5E52' }}>
+              <p style={{ fontSize: '1.125rem', fontWeight: '400', color: '#3D2E28' }}>
                 {value.label}
               </p>
             </div>

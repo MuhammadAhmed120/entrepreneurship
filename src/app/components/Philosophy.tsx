@@ -31,13 +31,13 @@ export default function Philosophy() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="mb-4" style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', fontWeight: '300', color: '#6B5E52' }}>
+          <h2 className="mb-4" style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', fontWeight: '300', color: '#8B6F47' }}>
             Our Philosophy
           </h2>
-          <p style={{ fontSize: '1rem', color: '#8B7E6F' }}>
+          <p style={{ fontSize: '1rem', color: '#7A6A5C' }}>
             Three pillars of everyday comfort
           </p>
         </div>
@@ -45,13 +45,13 @@ export default function Philosophy() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {modes.map((mode, index) => (
             <div key={index} className="text-center">
-              <div className="mb-6 flex justify-center text-[#7F9E7C]">
+              <div className="mb-6 flex justify-center" style={{ color: '#A68968' }}>
                 {mode.icon}
               </div>
-              <h3 className="mb-4" style={{ fontSize: '1.375rem', fontWeight: '400', color: '#6B5E52' }}>
+              <h3 className="mb-4" style={{ fontSize: '1.375rem', fontWeight: '400', color: '#3D2E28' }}>
                 {mode.title}
               </h3>
-              <p style={{ fontSize: '1rem', lineHeight: '1.8', color: '#8B7E6F' }}>
+              <p style={{ fontSize: '1rem', lineHeight: '1.8', color: '#7A6A5C' }}>
                 {mode.description}
               </p>
             </div>
